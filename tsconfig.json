@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
-      "outDir": "./built",
+      "module": "none",
+      "sourceMap": true,
+      "outFile": "./built/bundle.js",
       "allowJs": true,
       "target": "es5"
   },
