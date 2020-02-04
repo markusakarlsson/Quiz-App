@@ -1,6 +1,30 @@
-document.querySelector(".start")
-document.addEventListener("click", startQuiz)
+let startButton = document.querySelector(".start") as HTMLButtonElement;
+startButton.addEventListener("click", startQuiz);
 
-function startQuiz(): any {
+function startQuiz() {
+    
+}
+
+function buildQuiz() {
+    
+}
+
+function submitAnswer() {
+
+}
+
+function showResult() {
+
+}
+
+function nextQuestion() {
+
+}
+
+function showEndGameResult () {
+
+}
+
+function playAgain() {
 
 }
