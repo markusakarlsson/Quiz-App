@@ -7,11 +7,7 @@ const submitButton = document.querySelector(".submit");
 
 startButton.addEventListener("click", startQuiz);
 
-submitButton.addEventListener("click", (e: Event) => {
-  console.log("hellooooo");
-  e.preventDefault();
-  
-});
+submitButton.addEventListener("click", showResult);
 
 let questionNumber = 0;
 
