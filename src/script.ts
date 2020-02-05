@@ -7,13 +7,13 @@ const submitButton = document.querySelector(".submit");
 
 startButton.addEventListener("click", startQuiz);
 
-submitButton.addEventListener("click", showResult);
+submitButton.addEventListener("click", submitAnswer);
 
 let questionNumber = 0;
 
 
 function startQuiz() {
-  showQuiz()
+  showQuiz();
   nextQuestion();
   
 }
@@ -25,11 +25,10 @@ function showQuiz() {
 }
 
 function submitAnswer() {
-  
+  nextQuestion();
 }
 
 function showResult() {
-  
 }
 
 function nextQuestion() {

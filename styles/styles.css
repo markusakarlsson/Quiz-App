@@ -7,8 +7,11 @@ html {
 }
 
 body {
+  font-family: 'Barlow', sans-serif;
   height: 100vh;
-  background: #bad;
+  background-image: url(/images/hockey.jpg);
+  background-position: center;
+  background-size: cover;
 
   display: grid;
   place-items: center center;
@@ -18,6 +21,7 @@ body {
   width: 60%;
   height: 60%;
   background: white;
+  opacity: 0.9;
   border: 1px solid black;
   border-radius: 1.5rem;
   display: flex;
@@ -30,7 +34,7 @@ body {
 .quiz h1 {
   font-size: 3rem;
   text-transform: uppercase;
-  font-family: monospace;
+  /* font-family: monospace; */
   letter-spacing: .3rem;
 
 }
@@ -65,6 +69,7 @@ body {
   justify-content:space-between;
   align-items: center;
   flex-direction: column;
+  font-size: 1.1rem;
 }
 
 .answer-form .answer-container {
@@ -74,4 +79,28 @@ body {
 
 .answer-form .answer-container input[type="radio"] {
   padding: 0 3rem;
+}
+
+.answer-container label {
+  margin-right: 1rem;
+}
+
+.quiz .submit {
+  padding: .7rem 1.7rem;
+  margin-top: 2rem;
+  
+  outline: none;
+  border: none;
+  background-color: #dadada;
+  color: black;
+  font-weight: bold;
+  letter-spacing: .2rem;
+  border-radius: .5rem;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  transition: box-shadow .3s ease;
+}
+
+.quiz .submit:hover {
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  
 }
