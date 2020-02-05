@@ -9,10 +9,10 @@ const questions = [
     correctAnswer: "c"
   },
   {
-    question: "Who invented JavaScript?",
+    question: "Who invented the toaster?",
     answers: {
-      a: "",
-      b: "",
+      a: "fkla",
+      b: "göran persson",
       c: ""
     },
     correctAnswer: "c"
