@@ -5,7 +5,7 @@ function startQuiz() {
     
 }
 
-function buildQuiz() {
+function showQuiz() {
     
 }
 
