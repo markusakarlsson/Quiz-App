@@ -1,6 +1,17 @@
-const questions = [
+type Question = {
+  title: string,
+  answers: {
+    a : string,
+    b: string,
+    c?: string,
+    d?: string
+  },
+  correctAnswer: string
+}
+
+const questions: Question[] = [
   {
-    question: "Hur mycket väger en ishockeypuck?",
+    title: "Hur mycket väger en ishockeypuck?",
     answers: {
       a: "156-170 g",
       b: "171-185 g",
@@ -9,7 +20,7 @@ const questions = [
     correctAnswer: "a"
   },
   {
-    question: "Hur många spelare får maximalt vara på isen från ett lag?",
+    title: "Hur många spelare får maximalt vara på isen från ett lag?",
     answers: {
       a: "5",
       b: "6",
@@ -18,7 +29,7 @@ const questions = [
     correctAnswer: "b"
   },
   {
-    question: "Hur många SM-Guld har Frölunda vunnit?",
+    title: "Hur många SM-Guld har Frölunda vunnit?",
     answers: {
       a: "3",
       b: "5",
@@ -27,7 +38,7 @@ const questions = [
     correctAnswer: "b"
   },
   {
-    question: "Vilken svensk har gjort mest poäng i NHL genom tiderna?",
+    title: "Vilken svensk har gjort mest poäng i NHL genom tiderna?",
     answers: {
       a: "Mats Sundin",
       b: "Börje Salming",
@@ -36,7 +47,7 @@ const questions = [
     correctAnswer: "a"
   },
   {
-    question: "Vad kallas Sveriges herrlandslag?",
+    title: "Vad kallas Sveriges herrlandslag?",
     answers: {
       a: "Kronorna",
       b: "Två Kronor",
@@ -45,7 +56,7 @@ const questions = [
     correctAnswer: "c"
   },
   {
-    question: "Hur många OS-Guld har Tre Kronor vunnit?",
+    title: "Hur många OS-Guld har Tre Kronor vunnit?",
     answers: {
       a: "2",
       b: "4",
@@ -54,7 +65,7 @@ const questions = [
     correctAnswer: "a"
   },
   {
-    question: "Hur många VM-Guld har Tre Kronor vunnit?",
+    title: "Hur många VM-Guld har Tre Kronor vunnit?",
     answers: {
       a: "5",
       b: "8",
@@ -63,7 +74,7 @@ const questions = [
     correctAnswer: "c"
   },
   {
-    question: "Vad heter Sveriges högsta liga för herrar?",
+    title: "Vad heter Sveriges högsta liga för herrar?",
     answers: {
       a: "Allsvenskan",
       b: "SHL",
@@ -72,12 +83,12 @@ const questions = [
     correctAnswer: "b"
   },
   {
-    question: "Har Adam spelat ishockey?",
+    title: "Har Adam spelat ishockey?",
     answers: {
       a: "Nej!",
       b: "Nej, han kan inte åka skridskor!",
       c: "Nej, han hatar hockey!"
     },
-    correctAnswer: "a"
+    correctAnswer: "b"
   }
 ];
